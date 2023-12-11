@@ -1,0 +1,15 @@
+shared_state: x y;
+
+r = 1;
+loc = x;
+store RLX #loc r;
+loc = y;
+store RLX #loc r;
+if r goto end;
+
+loc = y;
+load RLX #loc a;
+loc = x;
+load RLX #loc b;
+
+end: r = 1;

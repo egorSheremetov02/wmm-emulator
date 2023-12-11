@@ -1,0 +1,6 @@
+shared_state: x y;
+
+r = 1;
+loc = x;
+load RLX #loc a;
+store RLX #loc r;
